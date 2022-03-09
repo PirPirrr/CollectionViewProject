@@ -7,8 +7,16 @@
 
 import Foundation
 import UIKit
+import CoreLocation
 
-struct Landmark: Codable{
+struct Landmark: Decodable, Hashable{
+    enum Category: String, CaseIterable, Decodable{
+        case lakes = "Lakes"
+        case moutains = "Mountains"
+        case rivers = "Rivers"
+    }
+    
+    
     var name: String
     var category: String
     var city: String
@@ -19,5 +27,13 @@ struct Landmark: Codable{
     var park: String
     var coordinates: Coordinates
     var description: String
-    var imageName: String
+    private var imageName: String
+    
+    var image: UIImage{
+        return UIImage(named: imageName)!
+    }
+    
+    var lcoationCoordinate: CLLocationCoordinate2D{
+        return CLLocationCoordinate2D(latitude: coordinates.latitude, longitude: coordinates.longitude)
+    }
 }

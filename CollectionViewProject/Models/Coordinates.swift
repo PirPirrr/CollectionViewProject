@@ -5,9 +5,9 @@
 //  Created by lpiem on 09/03/2022.
 //
 
-import Foundation
+import CoreLocation
 
-struct Coordinates: Codable {
-    var longitude: Float
-    var latitude: Float
+struct Coordinates: Decodable, Hashable {
+    var longitude: CLLocationDegrees
+    var latitude: CLLocationDegrees
 }

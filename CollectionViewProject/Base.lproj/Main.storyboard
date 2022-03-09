@@ -17,19 +17,68 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hw4-cp-PgW">
-                            <size key="itemSize" width="128" height="128"/>
+                            <size key="itemSize" width="157" height="136"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UZf-4d-qJ9">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="favCell" id="UZf-4d-qJ9" customClass="LandmarkFavItemCell" customModule="CollectionViewProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="157" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="q4D-tb-r9Y">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="157" height="136"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E6G-r7-d0X">
+                                            <rect key="frame" x="0.0" y="0.0" width="157" height="136"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="E6G-r7-d0X" secondAttribute="bottom" id="ELx-yK-y0i"/>
+                                        <constraint firstAttribute="trailing" secondItem="E6G-r7-d0X" secondAttribute="trailing" id="foF-Ke-9FV"/>
+                                        <constraint firstItem="E6G-r7-d0X" firstAttribute="leading" secondItem="q4D-tb-r9Y" secondAttribute="leading" id="iSw-Il-ZyM"/>
+                                        <constraint firstItem="E6G-r7-d0X" firstAttribute="top" secondItem="q4D-tb-r9Y" secondAttribute="top" id="iXL-SJ-EtU"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <size key="customSize" width="157" height="136"/>
+                                <connections>
+                                    <outlet property="favLandmarkImage" destination="E6G-r7-d0X" id="qCR-OJ-74n"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="mainCell" id="Shv-oN-eTo" customClass="LandmarkItemCell" customModule="CollectionViewProject" customModuleProvider="target">
+                                <rect key="frame" x="167" y="3.5" width="149" height="129"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yCM-Jr-0Tt">
+                                    <rect key="frame" x="0.0" y="0.0" width="149" height="129"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t68-t2-6zB">
+                                            <rect key="frame" x="8" y="94.5" width="41.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Y3-EV-qaU">
+                                            <rect key="frame" x="0.0" y="0.0" width="149" height="129"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="4Y3-EV-qaU" firstAttribute="leading" secondItem="yCM-Jr-0Tt" secondAttribute="leading" id="BtT-CN-i8m"/>
+                                        <constraint firstItem="t68-t2-6zB" firstAttribute="top" secondItem="yCM-Jr-0Tt" secondAttribute="top" constant="94.5" id="DGw-mb-RV7"/>
+                                        <constraint firstItem="t68-t2-6zB" firstAttribute="leading" secondItem="yCM-Jr-0Tt" secondAttribute="leading" constant="8" id="KvO-2F-uBU"/>
+                                        <constraint firstAttribute="bottom" secondItem="4Y3-EV-qaU" secondAttribute="bottom" id="T8k-nf-Bkh"/>
+                                        <constraint firstItem="4Y3-EV-qaU" firstAttribute="top" secondItem="yCM-Jr-0Tt" secondAttribute="top" id="ZrP-yd-jyC"/>
+                                        <constraint firstAttribute="bottom" secondItem="t68-t2-6zB" secondAttribute="bottom" constant="14" id="kOO-Oo-piY"/>
+                                        <constraint firstAttribute="trailing" secondItem="t68-t2-6zB" secondAttribute="trailing" constant="99.5" id="zIi-Vs-dsh"/>
+                                        <constraint firstAttribute="trailing" secondItem="4Y3-EV-qaU" secondAttribute="trailing" id="zRk-3C-TbM"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="149" height="129"/>
+                                <connections>
+                                    <outlet property="imageLandmark" destination="4Y3-EV-qaU" id="s4B-6s-0Vb"/>
+                                    <outlet property="nameLandmark" destination="t68-t2-6zB" id="4m8-P1-Gm0"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -40,7 +89,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxn-Sg-c9W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-187" y="194"/>
+            <point key="canvasLocation" x="-188.40579710144928" y="193.52678571428569"/>
         </scene>
     </scenes>
     <resources>
