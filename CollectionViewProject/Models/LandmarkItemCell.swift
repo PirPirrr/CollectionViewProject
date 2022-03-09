@@ -11,6 +11,7 @@ class LandmarkItemCell: UICollectionViewCell{
 
     @IBOutlet weak var nameLandmark: UILabel!
     @IBOutlet weak var imageLandmark: UIImageView!
+    @IBOutlet weak var emoji: UILabel!
     
     
 }

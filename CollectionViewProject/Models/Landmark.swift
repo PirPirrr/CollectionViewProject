@@ -18,7 +18,7 @@ struct Landmark: Decodable, Hashable{
     
     
     var name: String
-    var category: String
+    var category: Category
     var city: String
     var state: String
     var id : Int

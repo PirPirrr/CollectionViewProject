@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderCollectionReusableView" id="yD4-b0-hDb">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGX-HC-gcN">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="KMB-kd-YXs"/>
+            <constraints>
+                <constraint firstItem="SGX-HC-gcN" firstAttribute="leading" secondItem="yD4-b0-hDb" secondAttribute="leading" id="Wq1-Gi-jO7"/>
+                <constraint firstAttribute="trailing" secondItem="SGX-HC-gcN" secondAttribute="trailing" id="aTj-TL-6g0"/>
+                <constraint firstItem="SGX-HC-gcN" firstAttribute="top" secondItem="yD4-b0-hDb" secondAttribute="top" id="hkZ-AJ-nQa"/>
+                <constraint firstItem="KMB-kd-YXs" firstAttribute="bottom" secondItem="SGX-HC-gcN" secondAttribute="bottom" id="pUC-kv-SMo"/>
+            </constraints>
+            <point key="canvasLocation" x="21.739130434782609" y="135.9375"/>
+        </collectionReusableView>
+    </objects>
+</document>

@@ -19,6 +19,7 @@
 		0808D91427D8BDEE0048834D /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0808D91327D8BDEE0048834D /* Coordinates.swift */; };
 		0808D91927D8D9450048834D /* LandmarkItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0808D91827D8D9450048834D /* LandmarkItemCell.swift */; };
 		0808D91B27D8E9700048834D /* LandmarkFavItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0808D91A27D8E9700048834D /* LandmarkFavItemCell.swift */; };
+		0808D91D27D900190048834D /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0808D91C27D900190048834D /* HeaderCollectionReusableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0808D91327D8BDEE0048834D /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		0808D91827D8D9450048834D /* LandmarkItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkItemCell.swift; sourceTree = "<group>"; };
 		0808D91A27D8E9700048834D /* LandmarkFavItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkFavItemCell.swift; sourceTree = "<group>"; };
+		0808D91C27D900190048834D /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				0808D90127D8B9990048834D /* LaunchScreen.storyboard */,
 				0808D90C27D8BC5F0048834D /* Assets.xcassets */,
 				0808D90427D8B9990048834D /* Info.plist */,
+				0808D91C27D900190048834D /* HeaderCollectionReusableView.xib */,
 			);
 			path = CollectionViewProject;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			files = (
 				0808D90327D8B9990048834D /* LaunchScreen.storyboard in Resources */,
 				0808D90B27D8BA820048834D /* gitignore in Resources */,
+				0808D91D27D900190048834D /* HeaderCollectionReusableView.xib in Resources */,
 				0808D90D27D8BC5F0048834D /* Assets.xcassets in Resources */,
 				0808D90F27D8BC6D0048834D /* landmarkData.json in Resources */,
 				0808D8FE27D8B9970048834D /* Main.storyboard in Resources */,
