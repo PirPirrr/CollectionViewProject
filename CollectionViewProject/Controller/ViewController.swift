@@ -77,7 +77,6 @@ class ViewController: UICollectionViewController {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mainCell", for: indexPath) as! LandmarkItemCell
                 cell.nameLandmark.text = self.landmarks[indexPath.item].name
                 cell.imageLandmark.image = self.landmarks[indexPath.item].image
-                cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.tap(_:))))
                 switch self.landmarks[indexPath.item].category{
                 case .lakes:
                     cell.emoji.text = "🌊"
@@ -101,9 +100,7 @@ class ViewController: UICollectionViewController {
         }
     }
     
-    @objc func tap(_ sender: UITapGestureRecognizer) {
-        print("test")
-    }
+
     
     private func createSnapshot(landmarks: [Landmark]) -> NSDiffableDataSourceSnapshot<Section,Item>{
         var snapshot = NSDiffableDataSourceSnapshot<Section,Item>()
@@ -161,6 +158,16 @@ class ViewController: UICollectionViewController {
             }
         }
         return layout
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier{
+        case "detail":
+            (segue.destination as! DetailLandmarkViewController).landmark = landmarks[collectionView.indexPath(for: sender as! UICollectionViewCell)?.item ?? 0]
+            segue.destination.title = landmarks[collectionView.indexPath(for: sender as! UICollectionViewCell)?.item ?? 0].name
+        default:
+            break
+        }
     }
     
     

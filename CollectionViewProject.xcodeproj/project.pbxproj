@@ -20,6 +20,7 @@
 		0808D91927D8D9450048834D /* LandmarkItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0808D91827D8D9450048834D /* LandmarkItemCell.swift */; };
 		0808D91B27D8E9700048834D /* LandmarkFavItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0808D91A27D8E9700048834D /* LandmarkFavItemCell.swift */; };
 		0808D91D27D900190048834D /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0808D91C27D900190048834D /* HeaderCollectionReusableView.xib */; };
+		0857D5CC27E1CC180013FE9A /* DetailLandmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0857D5CB27E1CC180013FE9A /* DetailLandmarkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		0808D91827D8D9450048834D /* LandmarkItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkItemCell.swift; sourceTree = "<group>"; };
 		0808D91A27D8E9700048834D /* LandmarkFavItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkFavItemCell.swift; sourceTree = "<group>"; };
 		0808D91C27D900190048834D /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		0857D5CB27E1CC180013FE9A /* DetailLandmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLandmarkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				0808D8FA27D8B9970048834D /* ViewController.swift */,
+				0857D5CB27E1CC180013FE9A /* DetailLandmarkViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				0808D8F727D8B9970048834D /* AppDelegate.swift in Sources */,
 				0808D91B27D8E9700048834D /* LandmarkFavItemCell.swift in Sources */,
 				0808D8F927D8B9970048834D /* SceneDelegate.swift in Sources */,
+				0857D5CC27E1CC180013FE9A /* DetailLandmarkViewController.swift in Sources */,
 				0808D91227D8BD230048834D /* Landmark.swift in Sources */,
 				0808D91427D8BDEE0048834D /* Coordinates.swift in Sources */,
 			);
