@@ -11,7 +11,7 @@ class DetailLandmarkViewController: UIViewController{
     var landmark: Landmark?
     
     @IBOutlet weak var imageDetailLandmark: UIImageView!
-    @IBOutlet weak var stateDetailLandmark: UILabel!
+    @IBOutlet weak var parkDetailLandmark: UILabel!
     @IBOutlet weak var descDetailLandmark: UILabel!
     @IBOutlet weak var longitudeDetailLandmark: UILabel!
     @IBOutlet weak var latitudeDetailLandmark: UILabel!
@@ -19,7 +19,7 @@ class DetailLandmarkViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        stateDetailLandmark.text = landmark?.state
+        parkDetailLandmark.text = landmark?.park
         descDetailLandmark.text = landmark?.description
         longitudeDetailLandmark.text = landmark?.coordinates.longitude.description
         latitudeDetailLandmark.text = landmark?.coordinates.latitude.description
